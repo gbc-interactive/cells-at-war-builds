@@ -4,75 +4,79 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Cells At War</title>
-   </head>
-   <body>
-      <center>
-      <h1>CELLS AT WAR BUILDS</h1>
-      <button onclick="downloadAll()">DOWNLOAD ALL</button>
-      <script>
-         function downloadAll() {
-          		window.location.href = 'cells-at-war-builds.rar';
-         }
-      </script>
-      <break>
-      <break>
-      <break>
       <style>
+         body {
+            text-align: center;
+         }
+
+         h1 {
+            margin-top: 20px;
+         }
+
          table {
-         border-collapse: collapse;
-         width: 100%;
-         margin-top: 20px; /* Add padding to the top */
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
          }
+
          th, td {
-         border: 1px solid #dddddd;
-         text-align: left;
-         padding: 8px;
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
          }
+
          tr:nth-child(even) {
-         background-color: #f2f2f2;
+            background-color: #f2f2f2;
+         }
+
+         td button {
+            float: right;
          }
       </style>
+   </head>
+   <body>
+      <h1>CELLS AT WAR BUILDS</h1>
       <table>
          <tr>
             <td>MITOCHONDRIA BUILD</td>
-            <td><button onclick="downloadMitochondria()">DOWNLOAD</button></td>
+            <td><button onclick="playOnlineMitochondria()">PLAY ONLINE</button></td>
          </tr>
          <tr>
             <td>RER BUILD</td>
-            <td><button onclick="downloadRER()">DOWNLOAD</button></td>
+            <td><button onclick="playOnlineRER()">PLAY ONLINE</button></td>
          </tr>
          <tr>
             <td>LYSOSOME BUILD</td>
-            <td><button onclick="downloadLysosome()">DOWNLOAD</button></td>
+            <td><button onclick="playOnlineLysosome()">PLAY ONLINE</button></td>
          </tr>
          <tr>
             <td>NUCLEUS BUILD</td>
-            <td><button onclick="downloadNucleus()">DOWNLOAD</button></td>
+            <td><button onclick="playOnlineNucleus()">PLAY ONLINE</button></td>
          </tr>
          <tr>
             <td>GOLGI BUILD</td>
-            <td><button onclick="downloadGolgi()">DOWNLOAD</button></td>
+            <td><button onclick="playOnlineGolgi()">PLAY ONLINE</button></td>
          </tr>
       </table>
       <script>
-         function downloadMitochondria() {
-             window.location.href = 'cells-at-war-builds.rar';
+         function playOnlineMitochondria() {
+            window.location.href = 'mitochondria-build\index.html';
          }
-         
-         function downloadRER() {
-             window.location.href = 'cells-at-war-builds.rar';
+
+         function playOnlineRER() {
+            // For example: window.location.href = 'play-online-rer';
          }
-         
-         function downloadLysosome() {
-             window.location.href = 'cells-at-war-builds.rar';
+
+         function playOnlineLysosome() {
+            // For example: window.location.href = 'play-online-lysosome';
          }
-         
-         function downloadNucleus() {
-             window.location.href = 'cells-at-war-builds.rar';
+
+         function playOnlineNucleus() {
+            // For example: window.location.href = 'play-online-nucleus';
          }
-         
-         function downloadGolgi() {
-             window.location.href = 'cells-at-war-builds.rar';
+
+         function playOnlineGolgi() {
+            // For example: window.location.href = 'play-online-golgi';
          }
       </script>
    </body>
